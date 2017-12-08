@@ -91,19 +91,3 @@ def merg_sort(ary1, ary2, merged)
 end
 
 #print merg_sort([ 2, 3, 4, 6, 11], [0, 1, 1, 5, 7, 9], [])
-
-def merg_splitter(ary1)
-  if ary.length==2
-    if ary[0]<ary[1]
-      return ary
-    else
-      ary<<ary[0]
-      ary.unshift
-      return ary
-    end
-  else
-    merg
-
-end
-
-puts merg_splitter([9, 8, 7, 4, 10, 1, 5, 9])
