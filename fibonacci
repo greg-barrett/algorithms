@@ -1,0 +1,21 @@
+def fibs(n)
+  ary=[0, 1]
+  until ary.length==n+1 do
+    ary<< ary[-2]+ ary[-1]
+  end
+  ary
+end
+
+ print fibs(5)
+
+ def fibs_rec(n)
+   if n == 0
+   	0
+   elsif n == 1
+   	1
+   else
+   	fibs_rec(n - 1) + fibs_rec(n - 2)
+   end
+ end
+
+print fibs_rec(5)
